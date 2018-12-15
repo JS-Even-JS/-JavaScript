@@ -19,4 +19,5 @@ if (!!(Object.keys(labelCounts).includes(label))) {
 
 }
 ```
-其中**!!**是不必要的
+其中 **!!** 是不必要的，因为includes()函数返回的就是一个布尔值了，不需要使用 **!!** 把它转换成布尔值，同时if()条件中也会自动进行强制转换为布尔值，所以 **!!** 属于多余的操作，可以将 **!!** 去除；<br/>
+**JavaScript中的6个假值: false、undefined、null、NaN、0、''(空字符串)**
